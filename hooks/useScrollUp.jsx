@@ -16,8 +16,9 @@ const useScrollUp = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isVisible = currentScrollPos > window.innerHeight / 2; // Hiển thị nút khi cuộn xuống dưới một nửa chiều cao của trang
-      setIsVisible(isVisible);
+      const showThreshold = window.innerHeight / 2; // Ngưỡng hiển thị nút khi cuộn xuống dưới một nửa chiều cao của trang
+
+      setIsVisible(currentScrollPos > showThreshold);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -42,7 +43,7 @@ const useScrollUp = () => {
    */
   return isVisible ? (
     <Button
-      className="fixed bottom-4 right-4 z-50 transition-opacity duration-500 opacity-100"
+      className="transition-opacity duration-500 opacity-100"
       onClick={scrollToTop}
     >
       <ArrowUpIcon />
