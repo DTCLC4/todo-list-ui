@@ -1,7 +1,3 @@
-<!--
-  PLEASE DON'T DELETE THIS TEMPLATE UNTIL YOU HAVE READ THE FIRST SECTION.
--->
-
 # Related Tickets
 
 - [#Ticket_ID](https://edu-redmine.vn/issues/xxxx)
