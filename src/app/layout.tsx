@@ -6,6 +6,7 @@ import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeToggle from "@/components/ThemeToggle";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
           defaultTheme="light"
         >
           <Header />
-          <Sidebar />
+          <Sidebar containerStyles="hidden lg:flex fixed top-16 left-0 bottom-0 w-72 z-40 p-5 overflow-y-auto transition-all duration-300" />
           {children}
           <Footer />
         </ThemeProvider>

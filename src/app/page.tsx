@@ -1,8 +1,7 @@
 export default function Home() {
   return (
-    <main className="mt-[60px] pt-[20px] pb-[20px] md:pt-[20px] md:pb-[20px] lg:ml-[300px] lg:pt-[20px] lg:pr-[30px] lg:pl-[30px] lg:pb-[20px] transition-all duration-300 bg-red-400">
+    <main className="mt-16 p-5 lg:ml-72 lg:pt-5 lg:pr-7 lg:pl-7 lg:pb-5 md:p-5 sm:p-5 transition-all duration-300">
       main page
     </main>
-
   );
 }
