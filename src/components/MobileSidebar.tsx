@@ -11,12 +11,11 @@ const MobileSidebar = () => {
         <TextAlignLeftIcon className="cursor-pointer h-[1.5rem] w-[1.5rem]" />
       </SheetTrigger>
       <SheetContent>
-        <div className="flex flex-col items-center justify-between h-full py-8">
-          <div className="flex flex-col items-center gap-y-32 overflow-y-auto">
+        <div className="flex flex-col items-center overflow-y-auto h-full py-8">
             <Logo />
-            <Sidebar containerStyles='flex flex-col items-center gap-y-6 ' />
-          </div>
+            <Sidebar containerStyles='flex flex-col items-center gap-y-6 w-full' />
         </div>
+
       </SheetContent>
     </Sheet>
   )
